@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests;
 
+use Anodyne\TablerIcons\BladeTablerIconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Orchestra\Testbench\TestCase;
-use RyanChandler\TablerIcons\BladeTablerIconsServiceProvider;
 
 class CompilesIconsTest extends TestCase
 {

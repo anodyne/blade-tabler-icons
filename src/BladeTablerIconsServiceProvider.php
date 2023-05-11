@@ -15,6 +15,7 @@ final class BladeTablerIconsServiceProvider extends ServiceProvider
             $factory->add('tabler', [
                 'path' => __DIR__ . '/../resources/svg',
                 'prefix' => 'tabler',
+                'class' => 'tabler-icon',
             ]);
         });
     }
