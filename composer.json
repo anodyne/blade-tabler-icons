@@ -1,18 +1,24 @@
 {
-    "name": "ryangjchandler/blade-tabler-icons",
+    "name": "anodyne/blade-tabler-icons",
     "description": "A package to easily make use of Tabler icons in your Laravel Blade views.",
     "keywords": [
         "Blade",
         "Tabler",
         "Laravel"
     ],
-    "homepage": "https://github.com/ryangjchandler/blade-tabler-icons",
+    "homepage": "https://github.com/anodyne/blade-tabler-icons",
     "license": "MIT",
     "authors": [
         {
             "name": "Ryan Chandler",
             "email": "support@ryangjchandler.co.uk",
             "homepage": "https://ryangjchandler.co.uk",
+            "role": "Developer"
+        },
+        {
+            "name": "David VanScott",
+            "email": "contact@anodyne-productions.com",
+            "homepage": "https://anodyne-productions.com",
             "role": "Developer"
         }
     ],
@@ -28,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RyanChandler\\TablerIcons\\": "src"
+            "Anodyne\\TablerIcons\\": "src"
         }
     },
     "autoload-dev": {
@@ -39,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RyanChandler\\TablerIcons\\BladeTablerIconsServiceProvider"
+                "Anodyne\\TablerIcons\\BladeTablerIconsServiceProvider"
             ]
         }
     },

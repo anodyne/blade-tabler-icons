@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RyanChandler\TablerIcons;
+namespace Anodyne\TablerIcons;
 
 use BladeUI\Icons\Factory;
 use Illuminate\Support\ServiceProvider;
