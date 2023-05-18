@@ -54,7 +54,7 @@
             "vendor/bin/php-cs-fixer fix"
         ],
         "update-icons": [
-            "npm install",
+            "npm update",
             "./bin/compile.sh ./node_modules/@tabler/icons/icons"
         ],
         "test": "vendor/bin/phpunit --colors=always"
