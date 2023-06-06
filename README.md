@@ -1,13 +1,13 @@
 # Blade Tabler Icons
 
-<a href="https://github.com/ryangjchandler/blade-tabler-icons/actions?query=workflow%3ATests">
-    <img src="https://github.com/ryangjchandler/blade-tabler-icons/workflows/Tests/badge.svg" alt="Tests">
+<a href="https://github.com/anodyne/blade-tabler-icons/actions?query=workflow%3ATests">
+    <img src="https://github.com/anodyne/blade-tabler-icons/workflows/Tests/badge.svg" alt="Tests">
 </a>
-<a href="https://packagist.org/packages/ryangjchandler/blade-tabler-icons">
-    <img src="https://poser.pugx.org/ryangjchandler/blade-tabler-icons/v/stable.svg" alt="Latest Stable Version">
+<a href="https://packagist.org/packages/anodyne/blade-tabler-icons">
+    <img src="https://poser.pugx.org/anodyne/blade-tabler-icons/v/stable.svg" alt="Latest Stable Version">
 </a>
-<a href="https://packagist.org/packages/ryangjchandler/blade-tabler-icons">
-    <img src="https://poser.pugx.org/ryangjchandler/blade-tabler-icons/d/total.svg" alt="Total Downloads">
+<a href="https://packagist.org/packages/anodyne/blade-tabler-icons">
+    <img src="https://poser.pugx.org/anodyne/blade-tabler-icons/d/total.svg" alt="Total Downloads">
 </a>
 
 A package to easily make use of [Tabler Icons](https://github.com/tabler/tabler-icons) in your Laravel Blade views.
@@ -22,7 +22,7 @@ For a full list of available icons see [the SVG directory](resources/svg) or pre
 ## Installation
 
 ```bash
-composer require ryangjchandler/blade-tabler-icons
+composer require anodyne/blade-tabler-icons
 ```
 
 ## Usage
@@ -69,7 +69,7 @@ Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent ch
 
 ## Maintainers
 
-Blade Tabler Icons is developed and maintained by [Ryan Chandler](https://ryangjchandler.co.uk).
+Blade Tabler Icons was developed by [Ryan Chandler](https://ryangjchandler.co.uk). Continued maintenance by [Anodyne Productions](https://anodyne-productions.com).
 
 ## License
 
