@@ -13,16 +13,18 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_compiles_a_single_anonymous_component()
     {
-        $result = svg('tabler-accessible')->toHtml();
+        $result = svg('tabler-2fa')->toHtml();
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<SVG
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-  <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
-  <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-</svg>
-SVG;
+        <svg class="tabler-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 16h-4l3.47 -4.66a2 2 0 1 0 -3.47 -1.54" />
+          <path d="M10 16v-8h4" />
+          <path d="M10 12l3 0" />
+          <path d="M17 16v-6a2 2 0 0 1 4 0v6" />
+          <path d="M17 13l4 0" />
+        </svg>
+        SVG;
 
         $this->assertStringMatchesFormat($result, $expected);
     }
@@ -30,13 +32,15 @@ SVG;
     /** @test */
     public function it_can_add_classes_to_icons()
     {
-        $result = svg('tabler-accessible', 'w-6 h-6 text-gray-500')->toHtml();
+        $result = svg('tabler-2fa', 'w-6 h-6 text-gray-500')->toHtml();
 
         $expected = <<<SVG
-        <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-          <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
-          <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+        <svg class="tabler-icon w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 16h-4l3.47 -4.66a2 2 0 1 0 -3.47 -1.54" />
+          <path d="M10 16v-8h4" />
+          <path d="M10 12l3 0" />
+          <path d="M17 16v-6a2 2 0 0 1 4 0v6" />
+          <path d="M17 13l4 0" />
         </svg>
         SVG;
 
@@ -46,15 +50,17 @@ SVG;
     /** @test */
     public function it_can_add_styles_to_icons()
     {
-        $result = svg('tabler-accessible', ['style' => 'color: #555'])->toHtml();
+        $result = svg('tabler-2fa', ['style' => 'color: #555'])->toHtml();
 
         $expected = <<<SVG
-<svg style="color: #555" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-  <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
-  <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-</svg>
-SVG;
+        <svg style="color: #555" class="tabler-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 16h-4l3.47 -4.66a2 2 0 1 0 -3.47 -1.54" />
+          <path d="M10 16v-8h4" />
+          <path d="M10 12l3 0" />
+          <path d="M17 16v-6a2 2 0 0 1 4 0v6" />
+          <path d="M17 13l4 0" />
+        </svg>
+        SVG;
 
         $this->assertStringMatchesFormat($expected, $result);
     }
