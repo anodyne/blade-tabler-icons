@@ -15,7 +15,7 @@ for FILE in $DIST/filled/*; do
     if [[ "$file" =~ ^($prefix)(.*)(.svg)$ ]]; then
         filename="${BASH_REMATCH[2]}"
         # echo filename: $filename
-        sed -e 's/width="24"//g;s/height="24"//g' -e '/^$/d' $file > "$RESOURCES/$filename-filled.svg"
+        sed -e 's/class="[^\"]*"//g;s/width="24"//g;s/height="24"//g' -e '/^$/d' $file > "$RESOURCES/$filename-filled.svg"
     fi
 done
 
@@ -28,7 +28,7 @@ for FILE in $DIST/outline/*; do
     if [[ "$file" =~ ^($prefix)(.*)$ ]]; then
         filename="${BASH_REMATCH[2]}"
         # echo filename: $filename
-        sed -e 's/width="24"//g;s/height="24"//g' -e '/^$/d' $file > "$RESOURCES/$filename"
+        sed -e 's/class="[^\"]*"//g;s/width="24"//g;s/height="24"//g' -e '/^$/d' $file > "$RESOURCES/$filename"
     fi
 done
 
