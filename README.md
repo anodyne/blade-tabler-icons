@@ -63,6 +63,12 @@ Then use them in your views like:
 
 Blade Tabler Icons uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality.
 
+### Enum
+
+Blade Tabler Icons includes an enum that maps every icon to an enum case. This allows for easily referencing specific icons from PHP. This is also helpful when using Tabler with a system like [Filament](https://filamentphp.com/) for referencing icons throughout panels.
+
+In order to use the enum, you must be running version 3.34.1 of this package.
+
 ## Changelog
 
 Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent changes.
