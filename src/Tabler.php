@@ -888,6 +888,7 @@ enum Tabler: string
     case BrandDouban = 'tabler-brand-douban';
     case BrandDribbbleFilled = 'tabler-brand-dribbble-filled';
     case BrandDribbble = 'tabler-brand-dribbble';
+    case BrandDropbox = 'tabler-brand-dropbox';
     case BrandDrops = 'tabler-brand-drops';
     case BrandDrupal = 'tabler-brand-drupal';
     case BrandEdge = 'tabler-brand-edge';
@@ -2233,6 +2234,7 @@ enum Tabler: string
     case DeviceGamepad2 = 'tabler-device-gamepad-2';
     case DeviceGamepad3Filled = 'tabler-device-gamepad-3-filled';
     case DeviceGamepad3 = 'tabler-device-gamepad-3';
+    case DeviceGamepadFilled = 'tabler-device-gamepad-filled';
     case DeviceGamepad = 'tabler-device-gamepad';
     case DeviceHeartMonitorFilled = 'tabler-device-heart-monitor-filled';
     case DeviceHeartMonitor = 'tabler-device-heart-monitor';
@@ -2678,11 +2680,13 @@ enum Tabler: string
     case FileDigitFilled = 'tabler-file-digit-filled';
     case FileDigit = 'tabler-file-digit';
     case FileDislike = 'tabler-file-dislike';
+    case FileDollarFilled = 'tabler-file-dollar-filled';
     case FileDollar = 'tabler-file-dollar';
     case FileDotsFilled = 'tabler-file-dots-filled';
     case FileDots = 'tabler-file-dots';
     case FileDownloadFilled = 'tabler-file-download-filled';
     case FileDownload = 'tabler-file-download';
+    case FileEuroFilled = 'tabler-file-euro-filled';
     case FileEuro = 'tabler-file-euro';
     case FileExcel = 'tabler-file-excel';
     case FileExport = 'tabler-file-export';
@@ -2703,11 +2707,13 @@ enum Tabler: string
     case FileLike = 'tabler-file-like';
     case FileMinusFilled = 'tabler-file-minus-filled';
     case FileMinus = 'tabler-file-minus';
+    case FileMusicFilled = 'tabler-file-music-filled';
     case FileMusic = 'tabler-file-music';
     case FileNeutralFilled = 'tabler-file-neutral-filled';
     case FileNeutral = 'tabler-file-neutral';
     case FileOff = 'tabler-file-off';
     case FileOrientation = 'tabler-file-orientation';
+    case FilePencilFilled = 'tabler-file-pencil-filled';
     case FilePencil = 'tabler-file-pencil';
     case FilePercentFilled = 'tabler-file-percent-filled';
     case FilePercent = 'tabler-file-percent';
@@ -2721,10 +2727,13 @@ enum Tabler: string
     case FileRss = 'tabler-file-rss';
     case FileSadFilled = 'tabler-file-sad-filled';
     case FileSad = 'tabler-file-sad';
+    case FileScissorsFilled = 'tabler-file-scissors-filled';
     case FileScissors = 'tabler-file-scissors';
     case FileSearch = 'tabler-file-search';
+    case FileSettingsFilled = 'tabler-file-settings-filled';
     case FileSettings = 'tabler-file-settings';
     case FileShredder = 'tabler-file-shredder';
+    case FileSignalFilled = 'tabler-file-signal-filled';
     case FileSignal = 'tabler-file-signal';
     case FileSmileFilled = 'tabler-file-smile-filled';
     case FileSmile = 'tabler-file-smile';
@@ -2739,6 +2748,7 @@ enum Tabler: string
     case FileTextShield = 'tabler-file-text-shield';
     case FileTextSpark = 'tabler-file-text-spark';
     case FileText = 'tabler-file-text';
+    case FileTimeFilled = 'tabler-file-time-filled';
     case FileTime = 'tabler-file-time';
     case FileTypeBmp = 'tabler-file-type-bmp';
     case FileTypeCss = 'tabler-file-type-css';
@@ -2765,8 +2775,11 @@ enum Tabler: string
     case FileTypeZip = 'tabler-file-type-zip';
     case FileTypographyFilled = 'tabler-file-typography-filled';
     case FileTypography = 'tabler-file-typography';
+    case FileUnknownFilled = 'tabler-file-unknown-filled';
     case FileUnknown = 'tabler-file-unknown';
+    case FileUploadFilled = 'tabler-file-upload-filled';
     case FileUpload = 'tabler-file-upload';
+    case FileVectorFilled = 'tabler-file-vector-filled';
     case FileVector = 'tabler-file-vector';
     case FileWord = 'tabler-file-word';
     case FileXFilled = 'tabler-file-x-filled';
@@ -2774,6 +2787,7 @@ enum Tabler: string
     case FileZip = 'tabler-file-zip';
     case File = 'tabler-file';
     case FilesOff = 'tabler-files-off';
+    case FilesFilled = 'tabler-files-filled';
     case Files = 'tabler-files';
     case Filter2Bolt = 'tabler-filter-2-bolt';
     case Filter2Cancel = 'tabler-filter-2-cancel';
@@ -4713,6 +4727,7 @@ enum Tabler: string
     case Refresh = 'tabler-refresh';
     case RegexOff = 'tabler-regex-off';
     case Regex = 'tabler-regex';
+    case RegisteredFilled = 'tabler-registered-filled';
     case Registered = 'tabler-registered';
     case RelationManyToManyFilled = 'tabler-relation-many-to-many-filled';
     case RelationManyToMany = 'tabler-relation-many-to-many';
@@ -5760,8 +5775,10 @@ enum Tabler: string
     case VersionsOff = 'tabler-versions-off';
     case Versions = 'tabler-versions';
     case VideoFilled = 'tabler-video-filled';
+    case VideoMinusFilled = 'tabler-video-minus-filled';
     case VideoMinus = 'tabler-video-minus';
     case VideoOff = 'tabler-video-off';
+    case VideoPlusFilled = 'tabler-video-plus-filled';
     case VideoPlus = 'tabler-video-plus';
     case Video = 'tabler-video';
     case View360Arrow = 'tabler-view-360-arrow';
@@ -5892,7 +5909,9 @@ enum Tabler: string
     case WreckingBall = 'tabler-wrecking-ball';
     case WritingOff = 'tabler-writing-off';
     case WritingSignOff = 'tabler-writing-sign-off';
+    case WritingSignFilled = 'tabler-writing-sign-filled';
     case WritingSign = 'tabler-writing-sign';
+    case WritingFilled = 'tabler-writing-filled';
     case Writing = 'tabler-writing';
     case XPowerY = 'tabler-x-power-y';
     case X = 'tabler-x';
