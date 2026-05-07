@@ -53,9 +53,12 @@
         "format": [
             "vendor/bin/php-cs-fixer fix"
         ],
+        "generate-enum": [
+            "php ./bin/generate-enum.php ./resources/svg ./src/Tabler.php"
+        ],
         "update-icons": [
             "npm update",
-            "./bin/compile.sh ./node_modules/@tabler/icons/icons"
+            "./bin/compile.sh"
         ],
         "test": "vendor/bin/phpunit --colors=always"
     },
