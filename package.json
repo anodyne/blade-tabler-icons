@@ -1,14 +1,15 @@
 {
+    "$schema": "https://www.schemastore.org/package.json",
     "private": true,
-    "devDependencies": {
-        "@tabler/icons": "^3.46.0",
-        "svgo": "^4.1.0"
-    },
     "packageManager": "bun@1.3.14",
     "scripts": {
         "build": "bun ./bin/compile-icons.mjs",
         "generate-enum": "php ./bin/generate-enum.php",
         "test": "bun test ./tests/build.test.mjs",
         "check-build": "bun ./bin/check-build.mjs"
+    },
+    "devDependencies": {
+        "@tabler/icons": "^3.46.0",
+        "svgo": "^4.1.0"
     }
 }
