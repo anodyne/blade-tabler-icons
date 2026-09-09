@@ -7,9 +7,9 @@ use Anodyne\TablerIcons\Tabler;
 use BladeUI\Icons\Exceptions\SvgNotFound;
 use BladeUI\Icons\Factory;
 use BladeUI\Icons\IconsManifest;
-use Illuminate\Container\Container;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Foundation\Application as FoundationApplication;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -58,11 +58,7 @@ test('unknown icon throws missing icon exception', function () {
 });
 
 test('publishing copies every bundled svg', function () {
-    $temporary = sys_get_temp_dir().'/tabler-publish-'.bin2hex(random_bytes(8));
-    $this->app->usePublicPath($temporary);
-    // Register publishing paths again after assigning this test's isolated public path.
-    (new BladeTablerIconsServiceProvider($this->app))->boot();
-    $destination = $temporary.'/vendor/blade-tabler-icons';
+    $destination = public_path('vendor/blade-tabler-icons');
     $paths = ServiceProvider::pathsToPublish(BladeTablerIconsServiceProvider::class, 'blade-tabler-icons');
     $this->assertSame([dirname(__DIR__).'/src/../resources/svg' => $destination], $paths);
     try {
@@ -77,9 +73,9 @@ test('publishing copies every bundled svg', function () {
             $this->assertSame(hash_file('sha256', $source), hash_file('sha256', $destination.'/'.basename($source)));
         }
     } finally {
-        $this->app['files']->deleteDirectory($temporary);
+        $this->app['files']->deleteDirectory($destination);
     }
-    $this->assertDirectoryDoesNotExist($temporary);
+    $this->assertDirectoryDoesNotExist($destination);
 });
 
 test('renders both variants through every Blade entry point with accessible attributes', function (string $name) {
@@ -102,7 +98,9 @@ test('renders both variants through every Blade entry point with accessible attr
 })->with(['outline' => ['heart'], 'filled' => ['heart-filled']]);
 
 test('registers icons whether the factory is resolved before or after the provider', function (bool $resolveFirst) {
-    $container = new Container;
+    $container = new FoundationApplication;
+    // Keep global helpers bound to the Testbench application.
+    FoundationApplication::setInstance($this->app);
     $container->singleton(Factory::class, function () {
         $files = new Filesystem;
 
