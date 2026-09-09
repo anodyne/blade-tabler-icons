@@ -4,53 +4,81 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   tests:
+    name: PHP ${{ matrix.php }} / Laravel ${{ matrix.laravel }}
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     strategy:
-      fail-fast: true
+      fail-fast: false
+      # PHP ranges follow Laravel's support policy, with this package's PHP 8.1 minimum.
       matrix:
-        os: [ubuntu-latest]
-        php: [8.1, 8.2, 8.3, 8.4]
-        laravel: [9.*, 10.*, 11.*, 12.*]
-        stability: [prefer-lowest, prefer-stable]
         include:
-          - laravel: 9.*
-            testbench: ^7.0
-          - laravel: 10.*
-            testbench: ^8.0
-          - laravel: 11.*
-            testbench: ^9.0
-          - laravel: 12.*
-            testbench: ^10.0
-        exclude:
-          - php: 8.1
-            laravel: 11.*
-          - php: 8.1
-            laravel: 12.*
-
-    name: P${{ matrix.php }} - L${{ matrix.laravel }}
-
+          - { php: '8.1', laravel: '9', testbench: '7' }
+          - { php: '8.2', laravel: '9', testbench: '7' }
+          - { php: '8.1', laravel: '10', testbench: '8' }
+          - { php: '8.2', laravel: '10', testbench: '8' }
+          - { php: '8.3', laravel: '10', testbench: '8' }
+          - { php: '8.2', laravel: '11', testbench: '9' }
+          - { php: '8.3', laravel: '11', testbench: '9' }
+          - { php: '8.4', laravel: '11', testbench: '9' }
+          - { php: '8.2', laravel: '12', testbench: '10' }
+          - { php: '8.3', laravel: '12', testbench: '10' }
+          - { php: '8.4', laravel: '12', testbench: '10' }
+          - { php: '8.5', laravel: '12', testbench: '10' }
+          - { php: '8.3', laravel: '13', testbench: '11' }
+          - { php: '8.4', laravel: '13', testbench: '11' }
+          - { php: '8.5', laravel: '13', testbench: '11' }
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v7
 
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.composer/cache/files
-          key: dependencies-laravel-${{ matrix.laravel }}-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: dom, curl, libxml, mbstring, zip
+          extensions: dom, mbstring, xml, xmlwriter
           coverage: none
+          tools: composer:v2
+
+      - name: Validate Composer configuration
+        run: composer validate --strict
+
+      - name: Use stable dependencies
+        run: composer config minimum-stability stable
+
+      # Legacy Laravel releases still supported by this package have known advisories.
+      # Allow installing them only in these compatibility jobs; Composer still reports audits.
+      - name: Allow legacy Laravel dependencies
+        if: matrix.laravel == '9' || matrix.laravel == '10' || matrix.laravel == '11'
+        run: composer config audit.block-insecure false
+
+      - name: Install dependencies for Laravel ${{ matrix.laravel }}
+        run: >-
+          composer update
+          --with="laravel/framework:^${{ matrix.laravel }}.0"
+          --with="orchestra/testbench:^${{ matrix.testbench }}.0"
+          --prefer-dist --no-interaction --no-progress
+
+      - name: Run Pest tests
+        run: composer test
+
+  formatting:
+    name: Laravel Pint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          tools: composer:v2
 
       - name: Install dependencies
-        run: composer require "illuminate/contracts=${{ matrix.laravel }}" --prefer-dist --no-interaction --no-suggest
+        run: composer update --prefer-dist --prefer-stable --no-interaction --no-progress
 
-      - name: Execute tests
-        run: vendor/bin/phpunit
+      - name: Check formatting
+        run: composer format -- --test

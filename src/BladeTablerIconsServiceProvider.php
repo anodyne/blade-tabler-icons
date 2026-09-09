@@ -13,7 +13,7 @@ final class BladeTablerIconsServiceProvider extends ServiceProvider
     {
         $this->callAfterResolving(Factory::class, function (Factory $factory) {
             $factory->add('tabler', [
-                'path' => __DIR__ . '/../resources/svg',
+                'path' => __DIR__.'/../resources/svg',
                 'prefix' => 'tabler',
                 'class' => 'tabler-icon',
             ]);
@@ -24,7 +24,7 @@ final class BladeTablerIconsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../resources/svg' => public_path('vendor/blade-tabler-icons'),
+                __DIR__.'/../resources/svg' => public_path('vendor/blade-tabler-icons'),
             ], 'blade-tabler-icons');
         }
     }

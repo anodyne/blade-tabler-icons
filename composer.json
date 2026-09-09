@@ -28,9 +28,10 @@
         "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.14",
+        "ext-dom": "*",
+        "laravel/pint": "^1.0",
         "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
-        "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+        "pestphp/pest": "^1.23|^2.0|^3.0|^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -50,20 +51,18 @@
         }
     },
     "scripts": {
-        "format": [
-            "vendor/bin/php-cs-fixer fix"
-        ],
-        "generate-enum": [
-            "php ./bin/generate-enum.php ./resources/svg ./src/Tabler.php"
-        ],
+        "format": "vendor/bin/pint",
         "update-icons": [
-            "npm update",
-            "./bin/compile.sh"
+            "bun update @tabler/icons",
+            "bun run build"
         ],
-        "test": "vendor/bin/phpunit --colors=always"
+        "test": "vendor/bin/pest --colors=always"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

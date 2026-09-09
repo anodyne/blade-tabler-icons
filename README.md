@@ -1,14 +1,8 @@
 # Blade Tabler Icons
 
-<a href="https://github.com/anodyne/blade-tabler-icons/actions?query=workflow%3ATests">
-    <img src="https://github.com/anodyne/blade-tabler-icons/workflows/Tests/badge.svg" alt="Tests">
-</a>
-<a href="https://packagist.org/packages/anodyne/blade-tabler-icons">
-    <img src="https://poser.pugx.org/anodyne/blade-tabler-icons/v/stable.svg" alt="Latest Stable Version">
-</a>
-<a href="https://packagist.org/packages/anodyne/blade-tabler-icons">
-    <img src="https://poser.pugx.org/anodyne/blade-tabler-icons/d/total.svg" alt="Total Downloads">
-</a>
+<a href="https://github.com/anodyne/blade-tabler-icons/actions?query=workflow%3ATests"><img src="https://github.com/anodyne/blade-tabler-icons/workflows/Tests/badge.svg" alt="Tests"></a>
+<a href="https://packagist.org/packages/anodyne/blade-tabler-icons"><img src="https://poser.pugx.org/anodyne/blade-tabler-icons/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/anodyne/blade-tabler-icons"><img src="https://poser.pugx.org/anodyne/blade-tabler-icons/d/total.svg" alt="Total Downloads"></a>
 
 A package to easily make use of [Tabler Icons](https://github.com/tabler/tabler-icons) in your Laravel Blade views.
 
@@ -27,7 +21,7 @@ composer require anodyne/blade-tabler-icons
 
 ## Usage
 
-Icons can be used a self-closing Blade components which will be compiled to SVG icons:
+Icons can be used as self-closing Blade components which will be compiled to SVG icons:
 
 ```blade
 <x-tabler-alert-circle />
@@ -36,7 +30,7 @@ Icons can be used a self-closing Blade components which will be compiled to SVG 
 You can also pass classes to your icon components:
 
 ```blade
-<x-tabler-alert-circle class="w-6 h-6 text-gray-500"/>
+<x-tabler-alert-circle class="size-6 text-gray-500"/>
 ```
 
 And even use inline styles:
@@ -65,9 +59,25 @@ Blade Tabler Icons uses Blade Icons under the hood. Please refer to [the Blade I
 
 ### Enum
 
-Blade Tabler Icons includes an enum that maps every icon to an enum case. This allows for easily referencing specific icons from PHP. This is also helpful when using Tabler with a system like [Filament](https://filamentphp.com/) for referencing icons throughout panels.
+Blade Tabler Icons includes an enum that maps every icon to an enum case. This allows for easily referencing specific icons from PHP. This is also helpful when using Tabler with a system like [Filament](https://filamentphp.com/) for referencing icons.
 
-In order to use the enum, you must be running version 3.34.1 of this package.
+The enum is available from package version 3.34.1 onward:
+
+```php
+use Anodyne\TablerIcons\Tabler;
+
+svg(Tabler::AlertCircle->value);
+svg(Tabler::HeartFilled->value);
+```
+
+Outline icons use names such as `tabler-heart`; filled icons use `tabler-heart-filled`.
+Every icon receives the default `tabler-icon` class. Supplied classes are appended.
+The helper and Blade directive are also available:
+
+```blade
+{{ svg('tabler-heart', 'w-6 h-6') }}
+@svg('tabler-heart-filled', 'w-6 h-6', ['style' => 'color: #555'])
+```
 
 ## Changelog
 
@@ -80,3 +90,4 @@ Blade Tabler Icons was developed by [Ryan Chandler](https://ryangjchandler.co.uk
 ## License
 
 Blade Tabler Icons is open-sourced software licensed under [the MIT license](LICENSE.md).
+Tabler artwork is copyright Paweł Kuna and distributed under its [MIT license](resources/LICENSE.md).
