@@ -54,7 +54,7 @@
     "scripts": {
         "format": "vendor/bin/pint",
         "update-icons": [
-            "bun update @tabler/icons",
+            "bun update @tabler/icons --latest",
             "bun run build"
         ],
         "test": "vendor/bin/pest --colors=always"
