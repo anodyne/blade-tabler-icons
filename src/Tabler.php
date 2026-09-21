@@ -69,6 +69,8 @@ enum Tabler: string
     case AirConditioningDisabled = 'tabler-air-conditioning-disabled';
     case AirConditioning = 'tabler-air-conditioning';
     case AirTrafficControl = 'tabler-air-traffic-control';
+    case AirpodsL = 'tabler-airpods-l';
+    case AirpodsR = 'tabler-airpods-r';
     case AlarmAverage = 'tabler-alarm-average';
     case AlarmFilled = 'tabler-alarm-filled';
     case AlarmMinusFilled = 'tabler-alarm-minus-filled';
@@ -1458,6 +1460,7 @@ enum Tabler: string
     case CashBanknoteOff = 'tabler-cash-banknote-off';
     case CashBanknotePlus = 'tabler-cash-banknote-plus';
     case CashBanknote = 'tabler-cash-banknote';
+    case CashCoin = 'tabler-cash-coin';
     case CashEdit = 'tabler-cash-edit';
     case CashHeart = 'tabler-cash-heart';
     case CashMinus = 'tabler-cash-minus';
@@ -2615,6 +2618,7 @@ enum Tabler: string
     case EaseOutControlPointFilled = 'tabler-ease-out-control-point-filled';
     case EaseOutControlPoint = 'tabler-ease-out-control-point';
     case EaseOut = 'tabler-ease-out';
+    case EditBulk = 'tabler-edit-bulk';
     case EditCircleOff = 'tabler-edit-circle-off';
     case EditCircle = 'tabler-edit-circle';
     case EditFilled = 'tabler-edit-filled';
@@ -3013,8 +3017,10 @@ enum Tabler: string
     case FolderSearch = 'tabler-folder-search';
     case FolderShare = 'tabler-folder-share';
     case FolderStar = 'tabler-folder-star';
+    case FolderStats = 'tabler-folder-stats';
     case FolderSymlink = 'tabler-folder-symlink';
     case FolderUp = 'tabler-folder-up';
+    case FolderUser = 'tabler-folder-user';
     case FolderX = 'tabler-folder-x';
     case Folder = 'tabler-folder';
     case FoldersFilled = 'tabler-folders-filled';
@@ -3118,6 +3124,8 @@ enum Tabler: string
     case Golf = 'tabler-golf';
     case GpsFilled = 'tabler-gps-filled';
     case Gps = 'tabler-gps';
+    case Gpu2 = 'tabler-gpu-2';
+    case Gpu = 'tabler-gpu';
     case Gradienter = 'tabler-gradienter';
     case Grain = 'tabler-grain';
     case Grape = 'tabler-grape';
@@ -3901,6 +3909,7 @@ enum Tabler: string
     case MapPinUp = 'tabler-map-pin-up';
     case MapPinX = 'tabler-map-pin-x';
     case MapPin = 'tabler-map-pin';
+    case MapPinned = 'tabler-map-pinned';
     case MapPins = 'tabler-map-pins';
     case MapPlus = 'tabler-map-plus';
     case MapQuestion = 'tabler-map-question';
@@ -4418,6 +4427,9 @@ enum Tabler: string
     case Om = 'tabler-om';
     case Omega = 'tabler-omega';
     case Option = 'tabler-option';
+    case OrbitVertical = 'tabler-orbit-vertical';
+    case Orbit = 'tabler-orbit';
+    case Orbits = 'tabler-orbits';
     case Outbound = 'tabler-outbound';
     case Outlet = 'tabler-outlet';
     case OvalFilled = 'tabler-oval-filled';
@@ -4862,6 +4874,8 @@ enum Tabler: string
     case RectangularPrism = 'tabler-rectangular-prism';
     case RecycleOff = 'tabler-recycle-off';
     case Recycle = 'tabler-recycle';
+    case ReduceMotion = 'tabler-reduce-motion';
+    case ReferenceImage = 'tabler-reference-image';
     case RefreshAlert = 'tabler-refresh-alert';
     case RefreshDot = 'tabler-refresh-dot';
     case RefreshOff = 'tabler-refresh-off';
@@ -5045,6 +5059,7 @@ enum Tabler: string
     case SearchFilled = 'tabler-search-filled';
     case SearchOff = 'tabler-search-off';
     case Search = 'tabler-search';
+    case SecretPhrases = 'tabler-secret-phrases';
     case SectionFilled = 'tabler-section-filled';
     case SectionSign = 'tabler-section-sign';
     case Section = 'tabler-section';
@@ -5585,6 +5600,7 @@ enum Tabler: string
     case StethoscopeOff = 'tabler-stethoscope-off';
     case Stethoscope = 'tabler-stethoscope';
     case Sticker2 = 'tabler-sticker-2';
+    case StickerSmile = 'tabler-sticker-smile';
     case Sticker = 'tabler-sticker';
     case Stopwatch = 'tabler-stopwatch';
     case StormOff = 'tabler-storm-off';
@@ -6007,6 +6023,8 @@ enum Tabler: string
     case Virus = 'tabler-virus';
     case VocabularyOff = 'tabler-vocabulary-off';
     case Vocabulary = 'tabler-vocabulary';
+    case Voice2 = 'tabler-voice-2';
+    case Voice = 'tabler-voice';
     case Volcano = 'tabler-volcano';
     case Volume2 = 'tabler-volume-2';
     case Volume3 = 'tabler-volume-3';
