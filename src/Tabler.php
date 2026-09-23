@@ -2604,6 +2604,7 @@ enum Tabler: string
     case Dumbbell = 'tabler-dumbbell';
     case DumplingFilled = 'tabler-dumpling-filled';
     case Dumpling = 'tabler-dumpling';
+    case Duplicate = 'tabler-duplicate';
     case EPassport = 'tabler-e-passport';
     case EarOff = 'tabler-ear-off';
     case EarScan = 'tabler-ear-scan';
@@ -2995,6 +2996,7 @@ enum Tabler: string
     case FoldDown = 'tabler-fold-down';
     case FoldUp = 'tabler-fold-up';
     case Fold = 'tabler-fold';
+    case FolderAi = 'tabler-folder-ai';
     case FolderBolt = 'tabler-folder-bolt';
     case FolderCancel = 'tabler-folder-cancel';
     case FolderCheck = 'tabler-folder-check';
@@ -3016,6 +3018,7 @@ enum Tabler: string
     case FolderRoot = 'tabler-folder-root';
     case FolderSearch = 'tabler-folder-search';
     case FolderShare = 'tabler-folder-share';
+    case FolderSparkle = 'tabler-folder-sparkle';
     case FolderStar = 'tabler-folder-star';
     case FolderStats = 'tabler-folder-stats';
     case FolderSymlink = 'tabler-folder-symlink';
@@ -3095,16 +3098,21 @@ enum Tabler: string
     case GiftFilled = 'tabler-gift-filled';
     case GiftOff = 'tabler-gift-off';
     case Gift = 'tabler-gift';
+    case GitBranchCheck = 'tabler-git-branch-check';
     case GitBranchDeleted = 'tabler-git-branch-deleted';
+    case GitBranchX = 'tabler-git-branch-x';
     case GitBranch = 'tabler-git-branch';
     case GitCherryPick = 'tabler-git-cherry-pick';
     case GitCommit = 'tabler-git-commit';
     case GitCompare = 'tabler-git-compare';
     case GitFork = 'tabler-git-fork';
+    case GitMergeQueue = 'tabler-git-merge-queue';
     case GitMerge = 'tabler-git-merge';
     case GitPullRequestClosed = 'tabler-git-pull-request-closed';
     case GitPullRequestConflict = 'tabler-git-pull-request-conflict';
     case GitPullRequestDraft = 'tabler-git-pull-request-draft';
+    case GitPullRequestLocked = 'tabler-git-pull-request-locked';
+    case GitPullRequestUnlisted = 'tabler-git-pull-request-unlisted';
     case GitPullRequest = 'tabler-git-pull-request';
     case Gizmo = 'tabler-gizmo';
     case GlassChampagne = 'tabler-glass-champagne';
@@ -3998,6 +4006,7 @@ enum Tabler: string
     case MenuOrder = 'tabler-menu-order';
     case Menu = 'tabler-menu';
     case Mesh = 'tabler-mesh';
+    case Message2Ai = 'tabler-message-2-ai';
     case Message2Bolt = 'tabler-message-2-bolt';
     case Message2Cancel = 'tabler-message-2-cancel';
     case Message2Check = 'tabler-message-2-check';
@@ -4016,10 +4025,12 @@ enum Tabler: string
     case Message2Question = 'tabler-message-2-question';
     case Message2Search = 'tabler-message-2-search';
     case Message2Share = 'tabler-message-2-share';
+    case Message2Sparkle = 'tabler-message-2-sparkle';
     case Message2Star = 'tabler-message-2-star';
     case Message2Up = 'tabler-message-2-up';
     case Message2X = 'tabler-message-2-x';
     case Message2 = 'tabler-message-2';
+    case MessageAi = 'tabler-message-ai';
     case MessageBolt = 'tabler-message-bolt';
     case MessageCancel = 'tabler-message-cancel';
     case MessageChatbotFilled = 'tabler-message-chatbot-filled';
@@ -4069,6 +4080,7 @@ enum Tabler: string
     case MessageReport = 'tabler-message-report';
     case MessageSearch = 'tabler-message-search';
     case MessageShare = 'tabler-message-share';
+    case MessageSparkle = 'tabler-message-sparkle';
     case MessageStar = 'tabler-message-star';
     case MessageUp = 'tabler-message-up';
     case MessageUser = 'tabler-message-user';
@@ -4116,6 +4128,7 @@ enum Tabler: string
     case Mist = 'tabler-mist';
     case MobiledataOff = 'tabler-mobiledata-off';
     case Mobiledata = 'tabler-mobiledata';
+    case ModelAi = 'tabler-model-ai';
     case MoneybagEdit = 'tabler-moneybag-edit';
     case MoneybagHeart = 'tabler-moneybag-heart';
     case MoneybagMinus = 'tabler-moneybag-minus';
@@ -4479,6 +4492,7 @@ enum Tabler: string
     case Paywall = 'tabler-paywall';
     case Pdf = 'tabler-pdf';
     case Peace = 'tabler-peace';
+    case PencilAi = 'tabler-pencil-ai';
     case PencilBolt = 'tabler-pencil-bolt';
     case PencilCancel = 'tabler-pencil-cancel';
     case PencilCheck = 'tabler-pencil-check';
@@ -5571,12 +5585,16 @@ enum Tabler: string
     case Stack3 = 'tabler-stack-3';
     case StackBack = 'tabler-stack-back';
     case StackBackward = 'tabler-stack-backward';
+    case StackCheck = 'tabler-stack-check';
     case StackFilled = 'tabler-stack-filled';
     case StackForward = 'tabler-stack-forward';
     case StackFront = 'tabler-stack-front';
     case StackMiddle = 'tabler-stack-middle';
+    case StackMinus = 'tabler-stack-minus';
+    case StackPlus = 'tabler-stack-plus';
     case StackPop = 'tabler-stack-pop';
     case StackPush = 'tabler-stack-push';
+    case StackX = 'tabler-stack-x';
     case Stack = 'tabler-stack';
     case StairsDown = 'tabler-stairs-down';
     case StairsUp = 'tabler-stairs-up';
