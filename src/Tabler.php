@@ -144,9 +144,14 @@ enum Tabler: string
     case Alpha = 'tabler-alpha';
     case AlphabetArabic = 'tabler-alphabet-arabic';
     case AlphabetBangla = 'tabler-alphabet-bangla';
+    case AlphabetChinese = 'tabler-alphabet-chinese';
     case AlphabetCyrillic = 'tabler-alphabet-cyrillic';
+    case AlphabetDevanagari = 'tabler-alphabet-devanagari';
+    case AlphabetEthiopic = 'tabler-alphabet-ethiopic';
+    case AlphabetGeorgian = 'tabler-alphabet-georgian';
     case AlphabetGreek = 'tabler-alphabet-greek';
     case AlphabetHebrew = 'tabler-alphabet-hebrew';
+    case AlphabetJapanese = 'tabler-alphabet-japanese';
     case AlphabetKorean = 'tabler-alphabet-korean';
     case AlphabetLatin = 'tabler-alphabet-latin';
     case AlphabetPolish = 'tabler-alphabet-polish';
@@ -667,6 +672,7 @@ enum Tabler: string
     case BlenderFilled = 'tabler-blender-filled';
     case Blender = 'tabler-blender';
     case Blind = 'tabler-blind';
+    case BlobDashed = 'tabler-blob-dashed';
     case BlobFilled = 'tabler-blob-filled';
     case Blob = 'tabler-blob';
     case Blockquote = 'tabler-blockquote';
@@ -1721,6 +1727,7 @@ enum Tabler: string
     case CircleHalf2 = 'tabler-circle-half-2';
     case CircleHalfVertical = 'tabler-circle-half-vertical';
     case CircleHalf = 'tabler-circle-half';
+    case CircleHeart = 'tabler-circle-heart';
     case CircleKeyFilled = 'tabler-circle-key-filled';
     case CircleKey = 'tabler-circle-key';
     case CircleLetterAFilled = 'tabler-circle-letter-a-filled';
@@ -1802,8 +1809,10 @@ enum Tabler: string
     case CircleOpenArrowLeft = 'tabler-circle-open-arrow-left';
     case CircleOpenArrowRight = 'tabler-circle-open-arrow-right';
     case CircleOpenArrowUp = 'tabler-circle-open-arrow-up';
+    case CirclePause = 'tabler-circle-pause';
     case CirclePercentageFilled = 'tabler-circle-percentage-filled';
     case CirclePercentage = 'tabler-circle-percentage';
+    case CirclePlay = 'tabler-circle-play';
     case CirclePlus2 = 'tabler-circle-plus-2';
     case CirclePlusFilled = 'tabler-circle-plus-filled';
     case CirclePlusMinus = 'tabler-circle-plus-minus';
@@ -1812,6 +1821,7 @@ enum Tabler: string
     case CircleRectangleOff = 'tabler-circle-rectangle-off';
     case CircleRectangle = 'tabler-circle-rectangle';
     case CircleSquare = 'tabler-circle-square';
+    case CircleStop = 'tabler-circle-stop';
     case CircleTriangle = 'tabler-circle-triangle';
     case CircleXFilled = 'tabler-circle-x-filled';
     case CircleX = 'tabler-circle-x';
@@ -2787,6 +2797,7 @@ enum Tabler: string
     case FileLambdaFilled = 'tabler-file-lambda-filled';
     case FileLambda = 'tabler-file-lambda';
     case FileLike = 'tabler-file-like';
+    case FileLock = 'tabler-file-lock';
     case FileMinusFilled = 'tabler-file-minus-filled';
     case FileMinus = 'tabler-file-minus';
     case FileMusicFilled = 'tabler-file-music-filled';
@@ -3007,6 +3018,7 @@ enum Tabler: string
     case FolderExclamation = 'tabler-folder-exclamation';
     case FolderFilled = 'tabler-folder-filled';
     case FolderHeart = 'tabler-folder-heart';
+    case FolderLock = 'tabler-folder-lock';
     case FolderMinus = 'tabler-folder-minus';
     case FolderOff = 'tabler-folder-off';
     case FolderOpenFilled = 'tabler-folder-open-filled';
@@ -3659,6 +3671,8 @@ enum Tabler: string
     case Lemon2Filled = 'tabler-lemon-2-filled';
     case Lemon2 = 'tabler-lemon-2';
     case Lemon = 'tabler-lemon';
+    case LensConcave = 'tabler-lens-concave';
+    case LensConvex = 'tabler-lens-convex';
     case LetterASmall = 'tabler-letter-a-small';
     case LetterA = 'tabler-letter-a';
     case LetterBSmall = 'tabler-letter-b-small';
@@ -3997,6 +4011,7 @@ enum Tabler: string
     case Meeple = 'tabler-meeple';
     case MelonFilled = 'tabler-melon-filled';
     case Melon = 'tabler-melon';
+    case Memory = 'tabler-memory';
     case Menorah = 'tabler-menorah';
     case Menu2Filled = 'tabler-menu-2-filled';
     case Menu2 = 'tabler-menu-2';
@@ -5346,6 +5361,8 @@ enum Tabler: string
     case SquareChevronsRight = 'tabler-square-chevrons-right';
     case SquareChevronsUpFilled = 'tabler-square-chevrons-up-filled';
     case SquareChevronsUp = 'tabler-square-chevrons-up';
+    case SquareDashedTopSolid = 'tabler-square-dashed-top-solid';
+    case SquareDashedX = 'tabler-square-dashed-x';
     case SquareDashed = 'tabler-square-dashed';
     case SquareDotFilled = 'tabler-square-dot-filled';
     case SquareDot = 'tabler-square-dot';
@@ -5901,6 +5918,7 @@ enum Tabler: string
     case TrendingUp3 = 'tabler-trending-up-3';
     case TrendingUpDown = 'tabler-trending-up-down';
     case TrendingUp = 'tabler-trending-up';
+    case TriangleDashed = 'tabler-triangle-dashed';
     case TriangleFilled = 'tabler-triangle-filled';
     case TriangleInvertedFilled = 'tabler-triangle-inverted-filled';
     case TriangleInverted = 'tabler-triangle-inverted';
