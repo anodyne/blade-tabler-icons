@@ -196,6 +196,7 @@ enum Tabler: string
     case ArcheryArrow = 'tabler-archery-arrow';
     case ArchiveFilled = 'tabler-archive-filled';
     case ArchiveOff = 'tabler-archive-off';
+    case ArchiveRestore = 'tabler-archive-restore';
     case Archive = 'tabler-archive';
     case Armchair2Off = 'tabler-armchair-2-off';
     case Armchair2 = 'tabler-armchair-2';
@@ -604,6 +605,7 @@ enum Tabler: string
     case BatteryVerticalOff = 'tabler-battery-vertical-off';
     case BatteryVertical = 'tabler-battery-vertical';
     case Battery = 'tabler-battery';
+    case BeachBag = 'tabler-beach-bag';
     case BeachOff = 'tabler-beach-off';
     case Beach = 'tabler-beach';
     case BedFilled = 'tabler-bed-filled';
@@ -699,6 +701,7 @@ enum Tabler: string
     case BongOff = 'tabler-bong-off';
     case Bong = 'tabler-bong';
     case Book2 = 'tabler-book-2';
+    case BookClone = 'tabler-book-clone';
     case BookDownload = 'tabler-book-download';
     case BookFilled = 'tabler-book-filled';
     case BookOff = 'tabler-book-off';
@@ -1018,6 +1021,7 @@ enum Tabler: string
     case BrandMetabrainz = 'tabler-brand-metabrainz';
     case BrandMinecraft = 'tabler-brand-minecraft';
     case BrandMiniprogram = 'tabler-brand-miniprogram';
+    case BrandMisskey = 'tabler-brand-misskey';
     case BrandMixpanel = 'tabler-brand-mixpanel';
     case BrandMonday = 'tabler-brand-monday';
     case BrandMongodb = 'tabler-brand-mongodb';
@@ -1168,6 +1172,7 @@ enum Tabler: string
     case BrandVechain = 'tabler-brand-vechain';
     case BrandVercelFilled = 'tabler-brand-vercel-filled';
     case BrandVercel = 'tabler-brand-vercel';
+    case BrandViber = 'tabler-brand-viber';
     case BrandVimeoFilled = 'tabler-brand-vimeo-filled';
     case BrandVimeo = 'tabler-brand-vimeo';
     case BrandVinted = 'tabler-brand-vinted';
@@ -2257,6 +2262,7 @@ enum Tabler: string
     case DatabaseX = 'tabler-database-x';
     case Database = 'tabler-database';
     case Deaf = 'tabler-deaf';
+    case Decagram = 'tabler-decagram';
     case Decimal = 'tabler-decimal';
     case Deer = 'tabler-deer';
     case Delta = 'tabler-delta';
@@ -3118,11 +3124,15 @@ enum Tabler: string
     case GitCommit = 'tabler-git-commit';
     case GitCompare = 'tabler-git-compare';
     case GitFork = 'tabler-git-fork';
+    case GitMergeAi = 'tabler-git-merge-ai';
     case GitMergeQueue = 'tabler-git-merge-queue';
     case GitMerge = 'tabler-git-merge';
+    case GitPullRequestClosedAi = 'tabler-git-pull-request-closed-ai';
     case GitPullRequestClosed = 'tabler-git-pull-request-closed';
     case GitPullRequestConflict = 'tabler-git-pull-request-conflict';
+    case GitPullRequestDraftAi = 'tabler-git-pull-request-draft-ai';
     case GitPullRequestDraft = 'tabler-git-pull-request-draft';
+    case GitPullRequestLockedAi = 'tabler-git-pull-request-locked-ai';
     case GitPullRequestLocked = 'tabler-git-pull-request-locked';
     case GitPullRequestUnlisted = 'tabler-git-pull-request-unlisted';
     case GitPullRequest = 'tabler-git-pull-request';
@@ -3844,6 +3854,7 @@ enum Tabler: string
     case Logs = 'tabler-logs';
     case LollipopOff = 'tabler-lollipop-off';
     case Lollipop = 'tabler-lollipop';
+    case Loop = 'tabler-loop';
     case LuggageOff = 'tabler-luggage-off';
     case Luggage = 'tabler-luggage';
     case LungsFilled = 'tabler-lungs-filled';
@@ -3932,6 +3943,7 @@ enum Tabler: string
     case MapPinX = 'tabler-map-pin-x';
     case MapPin = 'tabler-map-pin';
     case MapPinned = 'tabler-map-pinned';
+    case MapPinsOff = 'tabler-map-pins-off';
     case MapPins = 'tabler-map-pins';
     case MapPlus = 'tabler-map-plus';
     case MapQuestion = 'tabler-map-question';
@@ -3998,6 +4010,7 @@ enum Tabler: string
     case Matrix = 'tabler-matrix';
     case MaximizeOff = 'tabler-maximize-off';
     case Maximize = 'tabler-maximize';
+    case Mcp = 'tabler-mcp';
     case MeatOff = 'tabler-meat-off';
     case Meat = 'tabler-meat';
     case Medal2 = 'tabler-medal-2';
@@ -4454,6 +4467,7 @@ enum Tabler: string
     case Olympics = 'tabler-olympics';
     case Om = 'tabler-om';
     case Omega = 'tabler-omega';
+    case Opacity = 'tabler-opacity';
     case Option = 'tabler-option';
     case OrbitVertical = 'tabler-orbit-vertical';
     case Orbit = 'tabler-orbit';
@@ -4525,6 +4539,7 @@ enum Tabler: string
     case PencilPin = 'tabler-pencil-pin';
     case PencilPlus = 'tabler-pencil-plus';
     case PencilQuestion = 'tabler-pencil-question';
+    case PencilRuler = 'tabler-pencil-ruler';
     case PencilSearch = 'tabler-pencil-search';
     case PencilShare = 'tabler-pencil-share';
     case PencilStar = 'tabler-pencil-star';
@@ -5264,6 +5279,7 @@ enum Tabler: string
     case SmartHome = 'tabler-smart-home';
     case SmokingNo = 'tabler-smoking-no';
     case Smoking = 'tabler-smoking';
+    case Snail = 'tabler-snail';
     case Snowboarding = 'tabler-snowboarding';
     case SnowflakeOff = 'tabler-snowflake-off';
     case Snowflake = 'tabler-snowflake';
@@ -6111,6 +6127,7 @@ enum Tabler: string
     case WaveSawTool = 'tabler-wave-saw-tool';
     case WaveSine = 'tabler-wave-sine';
     case WaveSquare = 'tabler-wave-square';
+    case Waveform = 'tabler-waveform';
     case WavesElectricity = 'tabler-waves-electricity';
     case WebhookOff = 'tabler-webhook-off';
     case Webhook = 'tabler-webhook';
@@ -6157,6 +6174,7 @@ enum Tabler: string
     case WorldHeart = 'tabler-world-heart';
     case WorldLatitude = 'tabler-world-latitude';
     case WorldLongitude = 'tabler-world-longitude';
+    case WorldMapOff = 'tabler-world-map-off';
     case WorldMap = 'tabler-world-map';
     case WorldMinus = 'tabler-world-minus';
     case WorldOff = 'tabler-world-off';
@@ -6242,6 +6260,7 @@ enum Tabler: string
     case ZoomScanFilled = 'tabler-zoom-scan-filled';
     case ZoomScan = 'tabler-zoom-scan';
     case Zoom = 'tabler-zoom';
+    case Zsh = 'tabler-zsh';
     case ZzzOff = 'tabler-zzz-off';
     case Zzz = 'tabler-zzz';
 }
