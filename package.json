@@ -9,7 +9,7 @@
         "check-build": "bun ./bin/check-build.mjs"
     },
     "devDependencies": {
-        "@tabler/icons": "^3.50.0",
+        "@tabler/icons": "^3.51.0",
         "svgo": "^4.1.0"
     }
 }

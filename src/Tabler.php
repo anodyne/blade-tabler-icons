@@ -40,9 +40,11 @@ enum Tabler: string
     case AdjustmentsDown = 'tabler-adjustments-down';
     case AdjustmentsExclamation = 'tabler-adjustments-exclamation';
     case AdjustmentsFilled = 'tabler-adjustments-filled';
+    case AdjustmentsFlame = 'tabler-adjustments-flame';
     case AdjustmentsHeart = 'tabler-adjustments-heart';
     case AdjustmentsHorizontalFilled = 'tabler-adjustments-horizontal-filled';
     case AdjustmentsHorizontal = 'tabler-adjustments-horizontal';
+    case AdjustmentsKey = 'tabler-adjustments-key';
     case AdjustmentsMinus = 'tabler-adjustments-minus';
     case AdjustmentsOff = 'tabler-adjustments-off';
     case AdjustmentsPause = 'tabler-adjustments-pause';
@@ -322,12 +324,16 @@ enum Tabler: string
     case ArrowMergeRight = 'tabler-arrow-merge-right';
     case ArrowMerge = 'tabler-arrow-merge';
     case ArrowMoveDownFilled = 'tabler-arrow-move-down-filled';
+    case ArrowMoveDownX = 'tabler-arrow-move-down-x';
     case ArrowMoveDown = 'tabler-arrow-move-down';
     case ArrowMoveLeftFilled = 'tabler-arrow-move-left-filled';
+    case ArrowMoveLeftX = 'tabler-arrow-move-left-x';
     case ArrowMoveLeft = 'tabler-arrow-move-left';
     case ArrowMoveRightFilled = 'tabler-arrow-move-right-filled';
+    case ArrowMoveRightX = 'tabler-arrow-move-right-x';
     case ArrowMoveRight = 'tabler-arrow-move-right';
     case ArrowMoveUpFilled = 'tabler-arrow-move-up-filled';
+    case ArrowMoveUpX = 'tabler-arrow-move-up-x';
     case ArrowMoveUp = 'tabler-arrow-move-up';
     case ArrowNarrowDownDashed = 'tabler-arrow-narrow-down-dashed';
     case ArrowNarrowDown = 'tabler-arrow-narrow-down';
@@ -1374,7 +1380,9 @@ enum Tabler: string
     case CameraDown = 'tabler-camera-down';
     case CameraExclamation = 'tabler-camera-exclamation';
     case CameraFilled = 'tabler-camera-filled';
+    case CameraFlame = 'tabler-camera-flame';
     case CameraHeart = 'tabler-camera-heart';
+    case CameraKey = 'tabler-camera-key';
     case CameraMinus = 'tabler-camera-minus';
     case CameraMoon = 'tabler-camera-moon';
     case CameraOff = 'tabler-camera-off';
@@ -2709,7 +2717,9 @@ enum Tabler: string
     case EyeEdit = 'tabler-eye-edit';
     case EyeExclamation = 'tabler-eye-exclamation';
     case EyeFilled = 'tabler-eye-filled';
+    case EyeFlame = 'tabler-eye-flame';
     case EyeHeart = 'tabler-eye-heart';
+    case EyeKey = 'tabler-eye-key';
     case EyeMinus = 'tabler-eye-minus';
     case EyeOff = 'tabler-eye-off';
     case EyePause = 'tabler-eye-pause';
@@ -2898,6 +2908,8 @@ enum Tabler: string
     case Filter2Down = 'tabler-filter-2-down';
     case Filter2Edit = 'tabler-filter-2-edit';
     case Filter2Exclamation = 'tabler-filter-2-exclamation';
+    case Filter2Flame = 'tabler-filter-2-flame';
+    case Filter2Key = 'tabler-filter-2-key';
     case Filter2Minus = 'tabler-filter-2-minus';
     case Filter2Pause = 'tabler-filter-2-pause';
     case Filter2Pin = 'tabler-filter-2-pin';
@@ -2920,7 +2932,9 @@ enum Tabler: string
     case FilterEdit = 'tabler-filter-edit';
     case FilterExclamation = 'tabler-filter-exclamation';
     case FilterFilled = 'tabler-filter-filled';
+    case FilterFlame = 'tabler-filter-flame';
     case FilterHeart = 'tabler-filter-heart';
+    case FilterKey = 'tabler-filter-key';
     case FilterMinus = 'tabler-filter-minus';
     case FilterOff = 'tabler-filter-off';
     case FilterPause = 'tabler-filter-pause';
@@ -2970,7 +2984,9 @@ enum Tabler: string
     case FlagDown = 'tabler-flag-down';
     case FlagExclamation = 'tabler-flag-exclamation';
     case FlagFilled = 'tabler-flag-filled';
+    case FlagFlame = 'tabler-flag-flame';
     case FlagHeart = 'tabler-flag-heart';
+    case FlagKey = 'tabler-flag-key';
     case FlagMinus = 'tabler-flag-minus';
     case FlagOff = 'tabler-flag-off';
     case FlagPause = 'tabler-flag-pause';
@@ -3238,7 +3254,9 @@ enum Tabler: string
     case HeartDown = 'tabler-heart-down';
     case HeartExclamation = 'tabler-heart-exclamation';
     case HeartFilled = 'tabler-heart-filled';
+    case HeartFlame = 'tabler-heart-flame';
     case HeartHandshake = 'tabler-heart-handshake';
+    case HeartKey = 'tabler-heart-key';
     case HeartMinus = 'tabler-heart-minus';
     case HeartOff = 'tabler-heart-off';
     case HeartPause = 'tabler-heart-pause';
@@ -3395,9 +3413,11 @@ enum Tabler: string
     case HomeEdit = 'tabler-home-edit';
     case HomeExclamation = 'tabler-home-exclamation';
     case HomeFilled = 'tabler-home-filled';
+    case HomeFlame = 'tabler-home-flame';
     case HomeHand = 'tabler-home-hand';
     case HomeHeart = 'tabler-home-heart';
     case HomeInfinity = 'tabler-home-infinity';
+    case HomeKey = 'tabler-home-key';
     case HomeLink = 'tabler-home-link';
     case HomeLock = 'tabler-home-lock';
     case HomeMinus = 'tabler-home-minus';
@@ -3879,8 +3899,10 @@ enum Tabler: string
     case MailExclamation = 'tabler-mail-exclamation';
     case MailFast = 'tabler-mail-fast';
     case MailFilled = 'tabler-mail-filled';
+    case MailFlame = 'tabler-mail-flame';
     case MailForward = 'tabler-mail-forward';
     case MailHeart = 'tabler-mail-heart';
+    case MailKey = 'tabler-mail-key';
     case MailMinus = 'tabler-mail-minus';
     case MailOff = 'tabler-mail-off';
     case MailOpenedFilled = 'tabler-mail-opened-filled';
@@ -4625,8 +4647,10 @@ enum Tabler: string
     case PhotoEdit = 'tabler-photo-edit';
     case PhotoExclamation = 'tabler-photo-exclamation';
     case PhotoFilled = 'tabler-photo-filled';
+    case PhotoFlame = 'tabler-photo-flame';
     case PhotoHeart = 'tabler-photo-heart';
     case PhotoHexagon = 'tabler-photo-hexagon';
+    case PhotoKey = 'tabler-photo-key';
     case PhotoMinus = 'tabler-photo-minus';
     case PhotoOff = 'tabler-photo-off';
     case PhotoPause = 'tabler-photo-pause';
@@ -5142,7 +5166,9 @@ enum Tabler: string
     case SettingsDown = 'tabler-settings-down';
     case SettingsExclamation = 'tabler-settings-exclamation';
     case SettingsFilled = 'tabler-settings-filled';
+    case SettingsFlame = 'tabler-settings-flame';
     case SettingsHeart = 'tabler-settings-heart';
+    case SettingsKey = 'tabler-settings-key';
     case SettingsMinus = 'tabler-settings-minus';
     case SettingsOff = 'tabler-settings-off';
     case SettingsPause = 'tabler-settings-pause';
@@ -5260,7 +5286,9 @@ enum Tabler: string
     case SignatureOff = 'tabler-signature-off';
     case Signature = 'tabler-signature';
     case SitemapFilled = 'tabler-sitemap-filled';
+    case SitemapMinus = 'tabler-sitemap-minus';
     case SitemapOff = 'tabler-sitemap-off';
+    case SitemapPlus = 'tabler-sitemap-plus';
     case Sitemap = 'tabler-sitemap';
     case SkateboardOff = 'tabler-skateboard-off';
     case Skateboard = 'tabler-skateboard';
@@ -5997,6 +6025,7 @@ enum Tabler: string
     case UserEdit = 'tabler-user-edit';
     case UserExclamation = 'tabler-user-exclamation';
     case UserFilled = 'tabler-user-filled';
+    case UserFlame = 'tabler-user-flame';
     case UserHeart = 'tabler-user-heart';
     case UserHexagon = 'tabler-user-hexagon';
     case UserKey = 'tabler-user-key';
@@ -6012,6 +6041,7 @@ enum Tabler: string
     case UserSearch = 'tabler-user-search';
     case UserShare = 'tabler-user-share';
     case UserShield = 'tabler-user-shield';
+    case UserSpark = 'tabler-user-spark';
     case UserSquareRounded = 'tabler-user-square-rounded';
     case UserSquare = 'tabler-user-square';
     case UserStar = 'tabler-user-star';
